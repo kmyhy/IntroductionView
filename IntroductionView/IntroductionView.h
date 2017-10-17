@@ -18,7 +18,7 @@
 @end
 
 // 数据源委托协议
-@protocol IntroductionDataSource<NSObject>
+@protocol IntroductionViewDataSource<NSObject>
 // 提供要添加的瓦片（UIView）集合
 -(NSArray<Tile*>*)tilesForIntroductionView:(IntroductionView*)introView;
 // 瓦片点击回调
@@ -26,7 +26,7 @@
 @end
 
 @interface IntroductionView : UIView
-@property(weak,nonatomic)id<IntroductionDataSource> dataSource;
+@property(weak,nonatomic)id<IntroductionViewDataSource> dataSource;
 -(void) removeWithCompletion:(void(^)(void))block;
 -(void)reload;
 @end

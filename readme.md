@@ -23,7 +23,7 @@
    
 4. 实现 IntroductionViewDataSource 协议的两个方法：
 
-	* -(NSArray<Tile*>*)tilesForIntroductionView:(IntroductionView *)introView
+	* -(NSArray<Tile\*>\*)tilesForIntroductionView:(IntroductionView *)introView
 	
 		在这个方法中指定要添加到蒙版层上的 Tile 数组。每个 Title 指定图片的文件名和 frame。
 	* -(void)introductionView:(IntroductionView *)introView clickAtIndex:(int)index

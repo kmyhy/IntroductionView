@@ -10,7 +10,7 @@
 #import "IntroductionView.h"
 #import "AppDelegate.h"
 
-@interface ViewController ()<IntroductionDataSource>
+@interface ViewController ()<IntroductionViewDataSource>
 @property(nonatomic,retain)IntroductionView* introView;
 @end
 

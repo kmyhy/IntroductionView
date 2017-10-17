@@ -45,7 +45,7 @@
     }
 }
 // 每当数据源改变，调用 reload 方法
--(void)setDataSource:(id<IntroductionDataSource>)dataSource{
+-(void)setDataSource:(id<IntroductionViewDataSource>)dataSource{
     _dataSource = dataSource;
     [self reload];
 }
